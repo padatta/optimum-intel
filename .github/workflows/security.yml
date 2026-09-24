@@ -26,5 +26,6 @@ jobs:
         with:
           ref: ${{env.branch}}
           fetch-depth: ${{env.depth}}
+          persist-credentials: false
       - name: Scan for secrets
         uses: trufflesecurity/trufflehog@main
